@@ -1,15 +1,5 @@
-const list = [
+export const list = [
   {
-    id: "01",
-    category: "auriculares",
-    name: "HyperX Cloud Fligth",
-    stock: 50,
-    price: 62300,
-    description: 'Auriculares Inalambricos con audio 7.1 ideales para todo tipo de gaming, competitivo y casual',
-      img: 'https://i.postimg.cc/YSQ8DW2q/auriculares-hyperx-cloud-fligth.jpg',
-    },
-  {
-    id: "02",
     category: "teclado",
     name: "HyperX Alloy Elite 2",
     stock: 5,
@@ -18,7 +8,6 @@ const list = [
     img: 'https://i.postimg.cc/8kYWWCDy/teclado-hyper-X-alloy-elite-2.jpg',
   },
   {
-    id: "03",
     name: 'Corsair Virtuosos',
     category: "auriculares",
     stock: 2,
@@ -27,7 +16,6 @@ const list = [
     img: 'https://i.postimg.cc/fLBc17GZ/auriculares-corsair-virtuoso.png',
   },
   {
-    id: "04",
     name: 'HyperX Pulsefire Surge',
     category: "mouse",
     stock: 10,
@@ -36,7 +24,6 @@ const list = [
     img: 'https://i.postimg.cc/T3JJrXtp/mouse-hyper-X-pulsefire-surge.jpg',
   },
   {
-    id: "05",
     name: 'HyperX Alloy Origins',
     category: "teclado",
     stock: 6,
@@ -45,7 +32,6 @@ const list = [
     img: 'https://i.postimg.cc/50RHwPcH/teclado-Hyper-X-alloy-origins.jpg',
   },
   {
-    id: "06",
     name: 'HyperX Pulsefire Core',
     category: "mouse",
     stock: 13,
@@ -54,7 +40,6 @@ const list = [
     img: 'https://i.postimg.cc/3wLjcF5h/mouse-hyper-X-pulsefire-core.jpg',
   },
   {
-    id: "07",
     name: 'Redragon Scylla black',
     category: "auriculares",
     stock: 20,

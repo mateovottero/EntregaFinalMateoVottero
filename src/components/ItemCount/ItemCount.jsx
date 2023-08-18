@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Button from '../Buttons'
 import "./itemCount.css"
 
-const ItemCount = ({stock,onAdd,initial}) => {
+const ItemCount = ({stock, onAdd, initial}) => {
   const [count, setCount] = useState(initial)
 
   const sumar = ()=> {
@@ -30,6 +30,7 @@ const ItemCount = ({stock,onAdd,initial}) => {
 
             <Button
               valor="Comprar"
+              disable={count === 0}
             handleClick={() =>onAdd(count)}></Button>
         </div>
     </div>
