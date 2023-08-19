@@ -30,7 +30,7 @@ function ListContainer(props) {
 
 useEffect(()=>{
   setLoading(true)
-  const coleccionProductos = categoryId ? query(collection(db, 'productos'), where("category", "==", categoryId)):(db, "productos")
+  const coleccionProductos = categoryId ? query(collection(db, 'productos'), where("category", "==", categoryId)):collection(db, "productos")
   getDocs(coleccionProductos)
   .then((res)=>{
     const list = res.docs.map((product)=>{
@@ -44,8 +44,6 @@ useEffect(()=>{
   .catch((error)=>console.log(error))
   .finally(()=>setLoading(false))
 },[categoryId])
-
-  console.log(products)
   return (<div>
     {
       loading ? <p className="mt-4 text-center">Loading...</p>

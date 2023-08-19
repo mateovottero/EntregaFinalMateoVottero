@@ -23,7 +23,7 @@ function NavBar() {
             </ButtonGroup>
           </div>
 
-          <Cartwidget valor="0" />
+         <NavLink style={{textDecoration:'none'}} to='/cart'><Cartwidget valor="0" /></NavLink>
         </div>
       </div>
     </>
